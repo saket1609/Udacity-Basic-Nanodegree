@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicplayer.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:baselineAligned="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="@string/this_is_home_screen"
+            android:textColor="@color/colorWhite" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="@string/this_activity_display_home_screen_of_the_music_app"
+            android:textColor="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            tools:ignore="UselessParent">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                android:background="@color/colorPink"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables,UselessParent">
+
+                <ImageView
+                    android:id="@+id/song_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/artist"
+                    tools:ignore="ContentDescription" />
+
+                <Button
+                    android:id="@+id/song_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPink"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/songs"
+                    android:textAllCaps="true"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorPurple"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/playlist_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/playlist"
+                    tools:ignore="ContentDescription" />
+
+                <Button
+                    android:id="@+id/playlist_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPurple"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/playlist"
+                    android:textAllCaps="true"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            tools:ignore="UselessParent">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@color/colorAqua"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables,UselessParent">
+
+                <ImageView
+                    android:id="@+id/album_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/album"
+                    tools:ignore="ContentDescription" />
+
+                <Button
+                    android:id="@+id/album_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAqua"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="@string/album"
+                    android:textAllCaps="true"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/store_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/song"
+                    tools:ignore="ContentDescription" />
+
+                <Button
+                    android:id="@+id/store_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="@string/store"
+                    android:textAllCaps="true"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
